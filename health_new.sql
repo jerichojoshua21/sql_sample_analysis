@@ -134,7 +134,6 @@ SELECT `Name`,
            ELSE 'Tertiary Care'
        END AS `Case Level`
 FROM health_data5
-ORDER BY `Case Level`
 ;
 ---------------------------------------------------------------------------------------------
 -- Questions

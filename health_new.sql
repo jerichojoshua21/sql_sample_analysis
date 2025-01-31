@@ -125,6 +125,18 @@ SELECT *
 FROM health_data5
 ;
 ---------------------------------------------------------------------------------------------
+-- Categorizing the Case Level of the patients based on the days they were admitted using CASE STATEMENT.
+SELECT `Name`,
+       DATEDIFF(`Discharge Date`, `Date of Admission`) AS `Admission Days`,
+       CASE
+           WHEN DATEDIFF(`Discharge Date`, `Date of Admission`) <= 10 THEN 'Primary Care'
+           WHEN DATEDIFF(`Discharge Date`, `Date of Admission`) <= 20 THEN 'Secondary Care'
+           ELSE 'Tertiary Care'
+       END AS `Case Level`
+FROM health_data5
+ORDER BY `Case Level`
+;
+---------------------------------------------------------------------------------------------
 -- Questions
 -- What is the total number of patients admitted?
 SELECT COUNT(*) AS Total_Admitted

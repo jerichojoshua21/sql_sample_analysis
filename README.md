@@ -10,4 +10,4 @@ The analysis are:
    - Updated the patient's Gender based on their names.
    - Updated the 'Billing Amount' column into 2 decimal points and changed the data type of 'Date of Admission' and 'Discharge    Date' into DATE data type.
    - Identified and Delete duplicate datas in the dataset.
-4. Created several questions to answer to gain insights for the cleaned dataset.
+4. Created several questions to answer and gain insights for the cleaned dataset.
